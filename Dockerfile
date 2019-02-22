@@ -25,5 +25,3 @@ COPY . $WORKDIR
 
 RUN chgrp -R 0 $WORKDIR && \
     chmod -R g=u $WORKDIR
-
-ENTRYPOINT ["bin/openshift-collector"]
